@@ -1,0 +1,43 @@
+# Flutter/Dart/Pub related
+.dart_tool/
+.packages
+.pub-cache/
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+.melos_tool/
+
+# Visual Studio Code
+.vscode/
+
+# IntelliJ related
+.idea/
+*.iml
+
+# Android Studio
+android/.gradle
+android/.idea
+android/local.properties
+android/app/debug
+android/app/profile
+android/app/release
+
+# Xcode (caso venha a usar iOS depois)
+ios/Flutter/Flutter.podspec
+ios/Pods/
+ios/Runner.xcworkspace
+ios/.symlinks
+ios/Flutter/ephemeral/
+ios/.dart_tool/
+ios/.generated/
+xcuserdata/
+DerivedData/
+
+# Others
+*.log
+*.tmp
+*.lock
+*.DS_Store
+
+# Environment
+.env
