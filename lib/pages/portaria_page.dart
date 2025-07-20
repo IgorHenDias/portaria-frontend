@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../services/veiculo_service.dart';
 import 'saida_page.dart';
+import 'retorno_page.dart';
 
 class PortariaPage extends StatefulWidget {
   const PortariaPage({super.key});
@@ -41,6 +42,15 @@ class _PortariaPageState extends State<PortariaPage> {
                 );
               },
               child: const Text('Registrar Saída'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const RetornoPage()),
+                );
+              },
+              child: const Text('Registrar Retorno'),
             ),
             const SizedBox(height: 16),
             Expanded(
