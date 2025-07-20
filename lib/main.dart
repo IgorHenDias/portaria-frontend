@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portariafrontend/pages/home_page.dart';
 import 'pages/portaria_page.dart';
 
 void main() {
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
           secondary: const Color(0xFF905524), // cor de destaque
         ),
       ),
-      home: const PortariaPage(),
+      home: const HomePage(),
     );
   }
 }
