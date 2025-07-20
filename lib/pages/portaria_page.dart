@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../services/veiculo_service.dart';
+import 'saida_page.dart';
 
 class PortariaPage extends StatefulWidget {
   const PortariaPage({super.key});
@@ -28,10 +29,29 @@ class _PortariaPageState extends State<PortariaPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text('Portaria - Veículos no Pátio')),
-      body: ListView.builder(
-        itemCount: veiculos.length,
-        itemBuilder: (context, index) => ListTile(
-          title: Text(veiculos[index]),
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Column(
+          children: [
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const SaidaPage()),
+                );
+              },
+              child: const Text('Registrar Saída'),
+            ),
+            const SizedBox(height: 16),
+            Expanded(
+              child: ListView.builder(
+                itemCount: veiculos.length,
+                itemBuilder: (context, index) => ListTile(
+                  title: Text(veiculos[index]),
+                ),
+              ),
+            ),
+          ],
         ),
       ),
       floatingActionButton: FloatingActionButton(
