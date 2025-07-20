@@ -14,4 +14,20 @@ class VeiculoService {
       return [];
     }
   }
+
+  static Future<bool> cadastrarVeiculo({
+    required String placa,
+    required String modelo,
+  }) async {
+    final response = await http.post(
+      Uri.parse('$baseUrl/veiculos'),
+      headers: {'Content-Type': 'application/json'},
+      body: jsonEncode({
+        'placa': placa,
+        'modelo': modelo,
+      }),
+    );
+
+    return response.statusCode == 200 || response.statusCode == 201;
+  }
 }
