@@ -14,8 +14,10 @@ class MyApp extends StatelessWidget {
       title: 'Portaria App',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primaryColor: const Color(0xFF4D7408), // Verde institucional
-        scaffoldBackgroundColor: const Color(0xFFCCCCCC), // Cinza claro de fundo
+        primaryColor: const Color(0xFF4D7408),
+        // Verde institucional
+        scaffoldBackgroundColor: const Color(0xFFCCCCCC),
+        // Cinza claro de fundo
         floatingActionButtonTheme: const FloatingActionButtonThemeData(
           backgroundColor: Color(0xFF905524), // Marrom (botão)
         ),
