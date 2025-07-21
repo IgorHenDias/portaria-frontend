@@ -4,6 +4,7 @@ import 'saida_page.dart';
 import 'retorno_page.dart';
 import 'cadastro_funcionario_page.dart';
 import 'cadastro_veiculo_page.dart';
+import 'veiculos_em_viagem_page.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -33,6 +34,11 @@ class HomePage extends StatelessWidget {
               context,
               label: 'Listar Veículos no Pátio',
               page: const PortariaPage(),
+            ),
+            _buildButton(
+              context,
+              label: 'Veículos em Viagem',
+              page: const VeiculosEmViagemPage(),
             ),
             _buildButton(
               context,
@@ -70,7 +76,8 @@ class HomePage extends StatelessWidget {
         },
         style: ElevatedButton.styleFrom(
           backgroundColor: Colors.white,
-          foregroundColor: const Color(0xFF4D7408), // Verde texto
+          foregroundColor: const Color(0xFF4D7408),
+          // Verde texto
           padding: const EdgeInsets.symmetric(vertical: 14),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(30),

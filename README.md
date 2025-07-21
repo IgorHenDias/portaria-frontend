@@ -1,6 +1,7 @@
 # 📱 Portaria App - Flutter
 
-Aplicativo mobile criado com Flutter para registrar e acompanhar a movimentação de veículos em uma portaria, consumindo uma API REST desenvolvida em Java + Spring Boot.
+Aplicativo mobile criado com Flutter para registrar e acompanhar a movimentação de veículos em uma
+portaria, consumindo uma API REST desenvolvida em Java + Spring Boot.
 
 ---
 
@@ -18,11 +19,12 @@ Aplicativo mobile criado com Flutter para registrar e acompanhar a movimentaçã
 
 - ✅ Registrar **saída** de veículo com motorista e destino
 - ✅ Registrar **retorno** do veículo
-- ✅ Listar veículos por status (no pátio ou em viagem)
+- ✅ Listar veículos no pátio
+- ✅ Visualizar veículos em viagem
 - ✅ Cadastrar novos veículos
 - ✅ Cadastrar motoristas (funcionários)
 - ✅ Dropdown de seleção de motorista integrado com backend
-- ✅ Estilo visual com as cores institucionais da AgroTerenas
+- ✅ Estilo visual com as cores institucionais da AGT
 
 ---
 
@@ -30,20 +32,32 @@ Aplicativo mobile criado com Flutter para registrar e acompanhar a movimentaçã
 
 O app consome os seguintes endpoints do backend Java (porta 8081):
 
-| Método | Endpoint                     | Descrição                           |
-|--------|------------------------------|--------------------------------------|
-| GET    | /viagens/veiculos?status=... | Lista veículos por status            |
-| GET    | /viagens/funcionarios        | Lista motoristas disponíveis         |
-| POST   | /viagens/saida               | Registra saída de veículo            |
-| POST   | /viagens/retorno             | Registra retorno                     |
-| POST   | /funcionarios                | Cadastra motorista                   |
-| POST   | /veiculos                    | Cadastra novo veículo                |
+| Método | Endpoint                     | Descrição                    |
+|--------|------------------------------|------------------------------|
+| GET    | /viagens/veiculos?status=... | Lista veículos por status    |
+| GET    | /viagens/funcionarios        | Lista motoristas disponíveis |
+| POST   | /viagens/saida               | Registra saída de veículo    |
+| POST   | /viagens/retorno             | Registra retorno             |
+| POST   | /funcionarios                | Cadastra motorista           |
+| POST   | /veiculos                    | Cadastra novo veículo        |
+
+---
+
+## 🧭 Telas
+
+- Menu principal com botões
+- Registro de saída
+- Registro de retorno
+- Cadastro de veículo
+- Cadastro de funcionário
+- Visualização de veículos em viagem
 
 ---
 
 ## 🖼️ Preview
 
 <img src="preview_flutter.png" alt="Preview do App" width="300" />
+
 
 ---
 
@@ -58,7 +72,8 @@ O app consome os seguintes endpoints do backend Java (porta 8081):
 flutter run
 ```
 
-> Certifique-se de que o backend esteja rodando em `http://10.0.2.2:8081` se estiver usando emulador Android.
+> Certifique-se de que o backend esteja rodando em `http://10.0.2.2:8081` se estiver usando emulador
+> Android.
 
 ---
 
