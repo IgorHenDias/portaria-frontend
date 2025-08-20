@@ -24,7 +24,6 @@ portaria, consumindo uma API REST desenvolvida em Java + Spring Boot.
 - ✅ Cadastrar novos veículos
 - ✅ Cadastrar motoristas (funcionários)
 - ✅ Dropdown de seleção de motorista integrado com backend
-- ✅ Estilo visual com as cores institucionais da AGT
 
 ---
 
